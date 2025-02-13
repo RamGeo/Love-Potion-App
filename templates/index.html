@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Love Potion Mixer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Valentine's Day Animated Text -->
+    <div class="text-container">
+        <h1>Happy Valentine's Day</h1>
+    </div>
+
+    <!-- Virtual Love Potion Mixer Title -->
+    <div class="potion-title">
+        <h4>Virtual Love Potion Mixer</h4>
+        <h4>Mix your own magical love potion!</h4>
+    </div>
+
+    <!-- App Box Container -->
+    <div class="container">
+        <!-- Ingredients Section -->
+        <!-- Ingredients Section -->
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <div class="ingredient" data-ingredient="unicorn-tears">🦄 Unicorn Tears</div>
+        <div class="ingredient" data-ingredient="chocolate-syrup">🍫 Chocolate Syrup</div>
+        <div class="ingredient" data-ingredient="stardust">✨ Stardust</div>
+        <div class="ingredient" data-ingredient="moonlight-essence">🌙 Moonlight Essence</div>
+        <div class="ingredient" data-ingredient="heart-sparkles">💖 Heart Sparkles</div>
+        <div class="ingredient" data-ingredient="dragon-scale">🐉 Dragon Scale</div>
+        <div class="ingredient" data-ingredient="fairy-dust">🧚 Fairy Dust</div>
+        <div class="ingredient" data-ingredient="phoenix-feather">🔥 Phoenix Feather</div>
+         <div class="ingredient" data-ingredient="golden-apple">🍎 Golden Apple</div>
+        <div class="ingredient" data-ingredient="rainbow-drops">🌈 Rainbow Drops</div>
+        <div class="ingredient" data-ingredient="enchanted-rose">🌹 Enchanted Rose</div>
+     <div class="ingredient" data-ingredient="crystal-shard">🔮 Crystal Shard</div>
+    </div>
+
+        <!-- Cauldron Section -->
+        <div class="cauldron">
+            <h2>Cauldron</h2>
+            <div id="cauldron-content"></div>
+            <button id="mix-button">Mix Potion</button>
+        </div>
+        
+<!-- Result Section -->
+<div id="result" class="hidden">
+    <h2>Your Love Potion</h2>
+    <p id="potion-description"></p>
+    <img src="/static/potion.png" alt="Valentine's Image" class="valentine-image"> <br>
+    <!-- Add the potion emoji below the result -->
+    <button id="reset-button">Mix Another Potion</button>
+</div>
+
+
+ 
+    <!-- Link to the external JavaScript file -->
+    <script src="/static/script.js"></script>
+</body>
+
+<br>
+
+<footer>
+    <p>&copy; <span id="year"></span> All Rights Reserved | Love Potion Generator made with ❤️ by Georgia and Andriana for Zone01Athens</p>
+</footer>
+
+<script>
+    // Set the current year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffccf2; /* Light pink background */
+    color: #990a51; /* Dark pink text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('/static/pink.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Custom font for h4 */
+h4 {
+    font-family: 'Rubik Burned', sans-serif;
+    font-size: 30px;
+}
+
+/* Valentine's Day Animated Text */
+.text-container {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%; /* Adjust this value to move the text higher or lower */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it stays behind the app container */
+    margin-top: -20px;
+}
+
+.text-container h1 {
+    margin: 0;
+    font-size: 48px;
+    color: rgba(102, 99, 99, 0.01);
+    background-image: url('/static/graffiti.jpg');
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    pointer-events: none; /* Ensures it doesn't block input fields */
+    font-weight: 1500; /* Increase this to make it thicker (higher number means bolder) */
+}
+
+/* Style the image */
+.valentine-image {
+    width: 50px; /* Adjust width */
+    height: auto;
+    margin-top: 15px; /* Adjust the space between the title and image */
+    background-color: transparent;
+}
+
+
+/* Virtual Love Potion Mixer Title */
+.potion-title {
+    margin-top: 200px; /* Adjust this value to position it below the animated text */
+    z-index: 2; /* Ensure it appears above the animated text */
+}
+
+/* App Box Container */
+.container {
+    max-width: 500px; /* Smaller width */
+    margin: 10px auto; /* Reduced top margin to move the container higher */
+    padding: 20px;
+    background-color: rgba(224, 224, 224, 0.5); /* Light grey with 50% transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure it appears above the animated text */
+    position: relative; /* Ensure it stays in place */
+    flex-grow: 1; /* Allow container to grow dynamically */
+}
+
+
+.ingredients {
+    margin-bottom: 20px;
+}
+
+.ingredient {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ff99cc; /* Light pink */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.ingredient:hover {
+    background-color: #ffffff; /* Darker pink */
+}
+
+.cauldron {
+    margin-bottom: 20px;
+}
+
+#cauldron-content {
+    min-height: 100px;
+    padding: 20px;
+    background-color: #111111; /* Light gray */
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #ff3366; /* Bright pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0044; /* Darker pink */
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animations */
+@keyframes bubble {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.bubbling {
+    animation: bubble 0.5s infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        background-position: left top;
+    }
+    25% {
+        background-position: right bottom;
+    }
+    50% {
+        background-position: left bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
+    width: 100%;
+    font-size: 14px;
+    z-index: 3; /* Ensure it appears above other elements */
+    color: black;
+    margin-top: auto; /* Push footer to the bottom */
+}
